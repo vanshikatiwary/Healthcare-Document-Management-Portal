@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS documents (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  filename TEXT NOT NULL,
+  filepath TEXT NOT NULL,
+  filesize INTEGER NOT NULL,
+  created_at TEXT NOT NULL
+);
+
