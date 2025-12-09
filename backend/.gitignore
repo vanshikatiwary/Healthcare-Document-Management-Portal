@@ -1,0 +1,15 @@
+# ignore sqlite database
+backend/documents.db
+
+# ignore uploaded files
+backend/uploads/
+
+# Node modules
+backend/node_modules/
+frontend/node_modules/
+
+# Logs
+*.log
+
+# ENV files
+*.env
