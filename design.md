@@ -1,6 +1,6 @@
-design.md
+# **Design.md**
 
-Healthcare Document Management Platform — Design Document
+# Healthcare Document Management Platform — Design Document
 
 Author: Vanshika Tiwari
 
@@ -10,7 +10,7 @@ Tech Stack: React (Vite), Tailwind CSS, Express.js, Multer, SQLite3
 
 Date: December 2025
 
-1. Overview
+# **1. Overview**
 
 The Healthcare Document Management Platform is a full-stack application that allows users to:
 
@@ -28,7 +28,7 @@ Interact through a clean healthcare-themed dashboard UI
 
 The system follows the exact specifications provided in the assignment, including file validation, REST API architecture, and SQLite persistence.
 
-2. High-Level Architecture
+# 2. High-Level Architecture
 
 The system follows a client–server architecture:
 ┌───────────────────┐        HTTP/JSON        ┌────────────────────┐
@@ -45,7 +45,7 @@ The system follows a client–server architecture:
            ▼                                                ▼
    User uploads PDF                               File stored in /uploads
 
-3. Technology Choices
+# 3. Technology Choices
 Frontend
 
 React (Vite): Fast development and modern tooling.
@@ -56,7 +56,7 @@ React Router: Multi-page dashboard navigation.
 
 Axios: For clean API communication.
 
-Backend
+# **Backend**
 
 Express.js: Lightweight server framework.
 
@@ -64,7 +64,7 @@ Multer: Handles file uploads, file size validation, and PDF MIME checks.
 
 SQLite3: Zero-configuration embedded database with ACID compliance.
 
-Why these choices?
+**Why these choices?**
 
 Simple setup
 
@@ -74,7 +74,7 @@ Easy to run for reviewers
 
 Matches assignment requirements for a lightweight local database and REST API
 
-4. Data Model
+# 4. Data Model
 
 A single table: documents
 
@@ -87,7 +87,7 @@ created_at	TEXT	ISO timestamp
 
 This aligns 100% with the assignment’s DB schema.
 
-5. API Specification
+# 5. API Specification
 POST /documents/upload
 
 Upload a PDF file.
@@ -141,8 +141,8 @@ SQLite table
 
 Response:
 { "success": true }
-6. Detailed Flow
-1. Upload Flow
+# **6. Detailed Flow**
+**1. Upload Flow**
 
 User selects a PDF on the frontend.
 
@@ -154,7 +154,7 @@ Backend saves metadata in SQLite.
 
 React updates the UI list.
 
-2. Download Flow
+**2. Download Flow**
 
 User clicks “Download”.
 
@@ -162,7 +162,7 @@ Browser opens GET /documents/:id.
 
 File served with proper MIME type.
 
-3. Delete Flow
+**3. Delete Flow**
 
 User clicks “Delete”.
 
@@ -172,7 +172,7 @@ Backend removes DB entry + file.
 
 React refreshes the list.
 
-7. Assumptions
+**7. Assumptions**
 
 Only one user uses the system → no login required (per assignment).
 
@@ -182,7 +182,7 @@ Application runs locally (localhost).
 
 Documents are personal health files like ID proofs, prescriptions, or test reports.
 
-8. Non-Functional Considerations
+**8. Non-Functional Considerations**
 
 Security: MIME type validation prevents malicious uploads.
 
@@ -192,7 +192,7 @@ Maintainability: Clear separation of frontend & backend.
 
 Scalability (Future): Could be upgraded to JWT auth + cloud storage.
 
-9. Folder Structure
+# **9. Folder Structure**
 /backend
    index.js
    uploads/
@@ -207,7 +207,3 @@ Scalability (Future): Could be upgraded to JWT auth + cloud storage.
      App.jsx
      main.jsx
    index.html
-   
-10. Conclusion
-This design meets 100% of the functional and technical requirements of the assignment.
-The frontend provides an enhanced healthcare dashboard UI, while the backend securely manages PDF documents and metadata.
