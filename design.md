@@ -31,6 +31,7 @@ The system follows the exact specifications provided in the assignment, includin
 # 2. High-Level Architecture
 
 The system follows a client–server architecture:
+
 ┌───────────────────┐        HTTP/JSON        ┌────────────────────┐
 │     Frontend       │  <------------------>  │      Backend        │
 │   React + Vite     │                        │ Express + Multer    │
@@ -46,6 +47,7 @@ The system follows a client–server architecture:
    User uploads PDF                               File stored in /uploads
 
 # 3. Technology Choices
+
 Frontend
 
 React (Vite): Fast development and modern tooling.
@@ -72,20 +74,23 @@ Excellent performance
 
 Easy to run for reviewers
 
-Matches assignment requirements for a lightweight local database and REST API
 
 # 4. Data Model
 
 A single table: documents
 
 Field	Type	Description
+
 id	INTEGER PK	Unique identifier
+
 filename	TEXT	Original file name
+
 filepath	TEXT	Actual stored path (uploads/xxxx.pdf)
+
 filesize	INTEGER	Size in bytes
+
 created_at	TEXT	ISO timestamp
 
-This aligns 100% with the assignment’s DB schema.
 
 # 5. API Specification
 POST /documents/upload
@@ -141,7 +146,9 @@ SQLite table
 
 Response:
 { "success": true }
+
 # **6. Detailed Flow**
+
 **1. Upload Flow**
 
 User selects a PDF on the frontend.
@@ -160,7 +167,6 @@ User clicks “Download”.
 
 Browser opens GET /documents/:id.
 
-File served with proper MIME type.
 
 **3. Delete Flow**
 
@@ -194,16 +200,27 @@ Scalability (Future): Could be upgraded to JWT auth + cloud storage.
 
 # **9. Folder Structure**
 /backend
+
    index.js
+   
    uploads/
+   
    documents.db
+   
    migrations/
-       init.sql
+   
+init.sql
 
 /frontend
+
    src/
-     components/
-     pages/
-     App.jsx
-     main.jsx
+   
+components/
+     
+pages/
+
+App.jsx
+
+ main.jsx
+ 
    index.html
