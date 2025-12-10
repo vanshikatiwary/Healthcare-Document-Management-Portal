@@ -199,7 +199,7 @@ Maintainability: Clear separation of frontend & backend.
 Scalability (Future): Could be upgraded to JWT auth + cloud storage.
 
 # **9. Folder Structure**
-/backend
+# /backend
 
    index.js
    
@@ -211,7 +211,8 @@ Scalability (Future): Could be upgraded to JWT auth + cloud storage.
    
 init.sql
 
-/frontend
+
+# /frontend
 
    src/
    
