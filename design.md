@@ -1,8 +1,13 @@
 design.md
+
 Healthcare Document Management Platform — Design Document
+
 Author: Vanshika Tiwari
+
 Role: Full Stack Developer
+
 Tech Stack: React (Vite), Tailwind CSS, Express.js, Multer, SQLite3
+
 Date: December 2025
 
 1. Overview
