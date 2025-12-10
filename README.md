@@ -6,27 +6,43 @@ It is a complete end-to-end application where users can upload, list, download, 
 
 
 🚀 Tech Stack
+
 🖥️ Frontend
+
 React (Vite)
+
 React Router
+
 Tailwind CSS (CDN)
+
 Axios
 
 
 ⚙️ Backend
+
 Node.js + Express
+
 Multer (file uploads)
+
 SQLite3 (lightweight database)
 
 
 📂 Features
+
 ✔ Upload PDF documents (max 5MB)
+
 ✔ Validate file type and size
+
 ✔ List all uploaded documents with metadata
+
 ✔ Download PDFs
+
 ✔ Delete documents (DB + storage cleanup)
+
 ✔ Beautiful Healthcare Dashboard UI
+
 ✔ Fully responsive layout
+
 ✔ No login required (as per assignment instructions)
 
 
@@ -39,13 +55,18 @@ SQLite Database + Local File Storage
 
 
 Database Stores:
+
 filename
+
 filepath
+
 filesize
+
 created_at
 
 
 🛠️ How to Run the Backend
+
 1. Navigate to backend
 cd backend
 
@@ -106,8 +127,11 @@ frontend/
 
 
 📘 Assumptions
+
 Only one user (no authentication needed)
+
 All uploaded files are healthcare-related PDFs
+
 Application runs locally via Express + SQLite
 
 
