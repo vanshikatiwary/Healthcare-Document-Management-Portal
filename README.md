@@ -2,10 +2,10 @@
 Full Stack Assessment — Document Upload System
 
 This project is built as part of a Full Stack Developer Assignment.
-It is a complete end-to-end application for uploading, listing, downloading, and deleting PDF documents.
+It is a complete end-to-end application where users can upload, list, download, and delete PDF health documents through a clean Healthcare Dashboard UI.
 
 🚀 Tech Stack
-Frontend
+🖥 Frontend
 
 React (Vite)
 
@@ -15,31 +15,33 @@ Tailwind CSS (CDN)
 
 Axios
 
-Backend
+⚙️ Backend
 
 Node.js + Express
 
-Multer (file upload)
+Multer (file uploads)
 
-SQLite3 database
+SQLite3 (lightweight local DB)
 
 📂 Features
-✔ Upload PDF documents (max 5MB)
-✔ Validate file size and type
-✔ List uploaded documents with metadata
-✔ Download any document
-✔ Delete documents (from DB + disk)
-✔ Clean healthcare dashboard UI
-✔ Fully responsive design
-✔ No login required (per assignment instruction)
+
+✔ Upload PDF documents (max size: 5MB)
+✔ Validate file type and size
+✔ List all uploaded documents with metadata
+✔ Download PDFs
+✔ Delete documents (DB + disk cleanup)
+✔ Beautiful Healthcare Dashboard UI
+✔ Fully responsive layout
+✔ No login required (as per assignment instructions)
+
 🧠 Project Architecture
+Frontend (React + Vite)
+        ↓    REST API Calls
+Backend (Express.js)
+        ↓
+SQLite Database + Local File Storage
 
-Frontend communicates with the backend through REST APIs:
-
-React (Vite)  →  Express API → SQLite + File Storage
-
-
-Database stores:
+Database Stores:
 
 filename
 
@@ -50,72 +52,73 @@ filesize
 created_at
 
 🛠 How to Run the Backend
-1. Navigate to backend:
+1️⃣ Navigate to backend folder
 cd backend
 
-2. Install dependencies:
+2️⃣ Install dependencies
 npm install
 
-3. Start the server:
+3️⃣ Start the server
 node index.js
 
-
-Backend runs on:
-
+Backend URL
 http://localhost:4000
 
 💻 How to Run the Frontend
-1. Navigate to frontend:
+1️⃣ Navigate to frontend folder
 cd frontend
 
-2. Install dependencies:
+2️⃣ Install dependencies
 npm install
 
-3. Start dev server:
+3️⃣ Start development server
 npm run dev
 
-
-Frontend runs on:
-
+Frontend URL
 http://localhost:5173
 
 📡 API Endpoints
-POST /documents/upload
+📤 POST /documents/upload
 
-Upload a PDF.
+Upload a PDF document.
 Body: multipart/form-data → file
 
-GET /documents
+📄 GET /documents
 
-List all documents.
+Fetch all uploaded documents.
 
-GET /documents/:id
+📥 GET /documents/:id
 
-Download file by ID.
+Download document by ID.
 
-DELETE /documents/:id
+🗑 DELETE /documents/:id
 
-Delete file from DB + filesystem.
+Delete document from:
+
+Database
+
+Local /uploads folder
 
 📁 Project Structure
 backend/
-  index.js
-  uploads/
-  documents.db
-  migrations/
-    init.sql
+│── index.js
+│── uploads/
+│── documents.db
+└── migrations/
+    └── init.sql
 
 frontend/
-  src/
-    components/
-    pages/
-    App.jsx
-  index.html
+└── src/
+    ├── components/
+    ├── pages/
+    ├── App.jsx
+    └── main.jsx
+└── index.html
 
 📘 Assumptions
 
-Only one user → no login needed.
+Single user system — login not required (per assignment specs)
 
-All uploaded files are health-related PDFs.
+All uploaded files are healthcare-related PDFs
 
-Runs locally via Express & SQLite.
+Application runs completely locally (Express + SQLite)
