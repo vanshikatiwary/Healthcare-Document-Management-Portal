@@ -45,6 +45,11 @@ SQLite3 (lightweight database)
 
 ✔ No login required (as per assignment instructions)
 
+<img width="1440" height="900" alt="assignment ss" src="https://github.com/user-attachments/assets/34850b5a-399f-4054-bfe5-b7e493c220d7" />
+
+<img width="1440" height="900" alt="Assignmnet ss 1" src="https://github.com/user-attachments/assets/86c2a20a-7848-4c6e-af98-3e0a7178415e" />
+
+
 
 # **🧠 Project Architecture**
 Frontend (React + Vite)
