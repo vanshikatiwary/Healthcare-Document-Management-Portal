@@ -6,9 +6,9 @@ export default function Dashboard() {
       <h1 className="text-3xl font-bold text-blue-700 mb-6">Dashboard Overview</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <StatsCard title="Total Patients" value="128" icon="🧑‍⚕️" />
-        <StatsCard title="Documents Uploaded" value="342" icon="📄" />
-        <StatsCard title="Appointments Today" value="18" icon="📅" />
+        <StatsCard title="Total Patients" value="2" icon="🧑‍⚕️" />
+        <StatsCard title="Documents Uploaded" value="2" icon="📄" />
+        <StatsCard title="Appointments Today" value="10" icon="📅" />
       </div>
 
       <div className="mt-10 bg-white shadow-lg rounded-xl p-8">
