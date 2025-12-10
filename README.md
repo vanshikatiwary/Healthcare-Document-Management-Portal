@@ -1,13 +1,13 @@
-🏥 Healthcare Document Management Platform
-Full Stack Assessment — Document Upload System
+# **🏥 Healthcare Document Management Platform**
+# Full Stack Assessment — Document Upload System
 
 This project is built as part of a Full Stack Developer Assignment.
 It is a complete end-to-end application where users can upload, list, download, and delete PDF health documents through a clean Healthcare Dashboard UI.
 
 
-🚀 Tech Stack
+# **🚀 Tech Stack**
 
-🖥️ Frontend
+# 🖥️ Frontend
 
 React (Vite)
 
@@ -18,7 +18,7 @@ Tailwind CSS (CDN)
 Axios
 
 
-⚙️ Backend
+# ⚙️ Backend
 
 Node.js + Express
 
@@ -27,7 +27,7 @@ Multer (file uploads)
 SQLite3 (lightweight database)
 
 
-📂 Features
+# 📂 Features
 
 ✔ Upload PDF documents (max 5MB)
 
@@ -46,7 +46,7 @@ SQLite3 (lightweight database)
 ✔ No login required (as per assignment instructions)
 
 
-🧠 Project Architecture
+# **🧠 Project Architecture**
 Frontend (React + Vite)
         ↓ REST API Calls
 Backend (Express.js)
@@ -54,7 +54,7 @@ Backend (Express.js)
 SQLite Database + Local File Storage
 
 
-Database Stores:
+# Database Stores:
 
 filename
 
@@ -65,7 +65,7 @@ filesize
 created_at
 
 
-🛠️ How to Run the Backend
+# 🛠️ How to Run the Backend
 
 1. Navigate to backend
 cd backend
@@ -77,10 +77,10 @@ npm install
 node index.js
 
 
-Backend runs at:
+**Backend runs at:**
 👉 http://localhost:4000
 
-💻 How to Run the Frontend
+# 💻 How to Run the Frontend
 1. Navigate to frontend
 cd frontend
 
@@ -91,7 +91,7 @@ npm install
 npm run dev
 
 
-Frontend runs at:
+**Frontend runs at:**
 👉 http://localhost:5173
 
 📡 API Endpoints
@@ -110,7 +110,7 @@ Download file by ID
 Delete file from DB + filesystem
 
 
-📁 Project Structure
+# **📁 Project Structure**
 backend/
 │── index.js
 │── uploads/
@@ -126,7 +126,7 @@ frontend/
     └── main.jsx
 
 
-📘 Assumptions
+**📘 Assumptions**
 
 Only one user (no authentication needed)
 
