@@ -126,11 +126,12 @@ frontend/
     └── main.jsx
 
 
+
 **📘 Assumptions**
 
 Only one user (no authentication needed)
 
-All uploaded files are healthcare-related PDFs
+All uploaded files are random PDFs
 
 Application runs locally via Express + SQLite
 
